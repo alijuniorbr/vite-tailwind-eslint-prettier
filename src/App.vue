@@ -1,7 +1,7 @@
 <template>
-  <div class="flex flex-col items-center">
+  <div class="flex flex-col items-center bg-indigo-200">
     <div class="my-4 flex justify-center space-x-2">
-      <router-link to="/">Home</router-link>
+      <router-link class="bg-pink-500" to="/">Homestead</router-link>
       <span>|</span>
       <router-link to="/junior">Júnior</router-link>
       <span>|</span>
@@ -13,6 +13,8 @@
   </div>
 </template>
 
-<script></script>
+<script>
+  export default {}
+</script>
 
 <style></style>

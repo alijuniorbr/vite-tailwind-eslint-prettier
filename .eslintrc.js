@@ -3,16 +3,20 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
-    node: true,
+    node: true
   },
   extends: [
     'plugin:vue/vue3-recommended',
     'eslint:recommended',
-    'plugin:prettier/recommended',
+    'plugin:prettier/recommended'
   ],
   parserOptions: {
-    ecmaVersion: 2021,
+    ecmaVersion: 2021
   },
   plugins: [],
-  rules: {},
+  rules: {
+    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'vue/html-indent': 'off'
+  }
 }
